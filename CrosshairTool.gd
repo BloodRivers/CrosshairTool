@@ -138,28 +138,28 @@ func _draw_crosshair_lines(center: Vector2) -> void:
 	var half_thickness: float = lines_thickness / 2
 
 	var lines: Array[Rect2] = [
-		# Слева
+		# Left
 		Rect2(
 			center.x - lines_gap - lines_length,
 			center.y - half_thickness,
 			lines_length,
 			lines_thickness
 		),
-		# Справа
+		# Right
 		Rect2(
 			center.x + lines_gap,
 			center.y - half_thickness,
 			lines_length,
 			lines_thickness
 		),
-		# Сверху
+		# Top
 		Rect2(
 			center.x - half_thickness,
 			center.y - lines_gap - lines_length,
 			lines_thickness,
 			lines_length
 		),
-		# Снизу
+		# Bottom
 		Rect2(
 			center.x - half_thickness,
 			center.y + lines_gap,
